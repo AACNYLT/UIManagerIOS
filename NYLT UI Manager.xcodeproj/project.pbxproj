@@ -13,6 +13,10 @@
 		C071592921C2139C003A54C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C071592821C2139C003A54C9 /* Assets.xcassets */; };
 		C071592C21C2139C003A54C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C071592A21C2139C003A54C9 /* LaunchScreen.storyboard */; };
 		C071593721C2139C003A54C9 /* NYLT_UI_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071593621C2139C003A54C9 /* NYLT_UI_ManagerTests.swift */; };
+		C071594821C215C9003A54C9 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C071594721C215C9003A54C9 /* NotificationCenter.framework */; };
+		C071594B21C215C9003A54C9 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071594A21C215C9003A54C9 /* TodayViewController.swift */; };
+		C071594E21C215C9003A54C9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C071594C21C215C9003A54C9 /* MainInterface.storyboard */; };
+		C071595221C215C9003A54C9 /* NYLT Today Message.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C071594521C215C9003A54C9 /* NYLT Today Message.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +27,28 @@
 			remoteGlobalIDString = C071591D21C2139B003A54C9;
 			remoteInfo = "NYLT UI Manager";
 		};
+		C071595021C215C9003A54C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C071591621C2139B003A54C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C071594421C215C9003A54C9;
+			remoteInfo = "NYLT Today Message";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C071595621C215C9003A54C9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C071595221C215C9003A54C9 /* NYLT Today Message.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C071591E21C2139B003A54C9 /* NYLT UI Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NYLT UI Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +61,13 @@
 		C071593221C2139C003A54C9 /* NYLT UI ManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NYLT UI ManagerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C071593621C2139C003A54C9 /* NYLT_UI_ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYLT_UI_ManagerTests.swift; sourceTree = "<group>"; };
 		C071593821C2139C003A54C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C071594521C215C9003A54C9 /* NYLT Today Message.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NYLT Today Message.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C071594721C215C9003A54C9 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		C071594A21C215C9003A54C9 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		C071594D21C215C9003A54C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C071594F21C215C9003A54C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C071595721C217A8003A54C9 /* NYLT Today Message.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NYLT Today Message.entitlements"; sourceTree = "<group>"; };
+		C071595821C217E1003A54C9 /* NYLT UI Manager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NYLT UI Manager.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +85,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C071594221C215C9003A54C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C071594821C215C9003A54C9 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +101,8 @@
 			children = (
 				C071592021C2139B003A54C9 /* NYLT UI Manager */,
 				C071593521C2139C003A54C9 /* NYLT UI ManagerTests */,
+				C071594921C215C9003A54C9 /* NYLT Today Message */,
+				C071594621C215C9003A54C9 /* Frameworks */,
 				C071591F21C2139B003A54C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +112,7 @@
 			children = (
 				C071591E21C2139B003A54C9 /* NYLT UI Manager.app */,
 				C071593221C2139C003A54C9 /* NYLT UI ManagerTests.xctest */,
+				C071594521C215C9003A54C9 /* NYLT Today Message.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +120,7 @@
 		C071592021C2139B003A54C9 /* NYLT UI Manager */ = {
 			isa = PBXGroup;
 			children = (
+				C071595821C217E1003A54C9 /* NYLT UI Manager.entitlements */,
 				C071592121C2139B003A54C9 /* AppDelegate.swift */,
 				C071592321C2139B003A54C9 /* ViewController.swift */,
 				C071592521C2139B003A54C9 /* Main.storyboard */,
@@ -96,6 +140,25 @@
 			path = "NYLT UI ManagerTests";
 			sourceTree = "<group>";
 		};
+		C071594621C215C9003A54C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C071594721C215C9003A54C9 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C071594921C215C9003A54C9 /* NYLT Today Message */ = {
+			isa = PBXGroup;
+			children = (
+				C071595721C217A8003A54C9 /* NYLT Today Message.entitlements */,
+				C071594A21C215C9003A54C9 /* TodayViewController.swift */,
+				C071594C21C215C9003A54C9 /* MainInterface.storyboard */,
+				C071594F21C215C9003A54C9 /* Info.plist */,
+			);
+			path = "NYLT Today Message";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +169,12 @@
 				C071591A21C2139B003A54C9 /* Sources */,
 				C071591B21C2139B003A54C9 /* Frameworks */,
 				C071591C21C2139B003A54C9 /* Resources */,
+				C071595621C215C9003A54C9 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C071595121C215C9003A54C9 /* PBXTargetDependency */,
 			);
 			name = "NYLT UI Manager";
 			productName = "NYLT UI Manager";
@@ -134,6 +199,23 @@
 			productReference = C071593221C2139C003A54C9 /* NYLT UI ManagerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C071594421C215C9003A54C9 /* NYLT Today Message */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C071595321C215C9003A54C9 /* Build configuration list for PBXNativeTarget "NYLT Today Message" */;
+			buildPhases = (
+				C071594121C215C9003A54C9 /* Sources */,
+				C071594221C215C9003A54C9 /* Frameworks */,
+				C071594321C215C9003A54C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NYLT Today Message";
+			productName = "NYLT Today Message";
+			productReference = C071594521C215C9003A54C9 /* NYLT Today Message.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,10 +228,23 @@
 				TargetAttributes = {
 					C071591D21C2139B003A54C9 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					C071593121C2139C003A54C9 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = C071591D21C2139B003A54C9;
+					};
+					C071594421C215C9003A54C9 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -168,6 +263,7 @@
 			targets = (
 				C071591D21C2139B003A54C9 /* NYLT UI Manager */,
 				C071593121C2139C003A54C9 /* NYLT UI ManagerTests */,
+				C071594421C215C9003A54C9 /* NYLT Today Message */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +283,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C071594321C215C9003A54C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C071594E21C215C9003A54C9 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +314,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C071594121C215C9003A54C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C071594B21C215C9003A54C9 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -217,6 +329,11 @@
 			isa = PBXTargetDependency;
 			target = C071591D21C2139B003A54C9 /* NYLT UI Manager */;
 			targetProxy = C071593321C2139C003A54C9 /* PBXContainerItemProxy */;
+		};
+		C071595121C215C9003A54C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C071594421C215C9003A54C9 /* NYLT Today Message */;
+			targetProxy = C071595021C215C9003A54C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -235,6 +352,14 @@
 				C071592B21C2139C003A54C9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C071594C21C215C9003A54C9 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C071594D21C215C9003A54C9 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -359,10 +484,13 @@
 		C071593C21C2139C003A54C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NYLT UI Manager/NYLT UI Manager.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7V888RBLR5;
 				INFOPLIST_FILE = "NYLT UI Manager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,10 +505,13 @@
 		C071593D21C2139C003A54C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NYLT UI Manager/NYLT UI Manager.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7V888RBLR5;
 				INFOPLIST_FILE = "NYLT UI Manager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,6 +565,46 @@
 			};
 			name = Release;
 		};
+		C071595421C215C9003A54C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "NYLT Today Message/NYLT Today Message.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7V888RBLR5;
+				INFOPLIST_FILE = "NYLT Today Message/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.aacnylt.NYLT-UI-Manager.NYLT-Today-Message";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C071595521C215C9003A54C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "NYLT Today Message/NYLT Today Message.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7V888RBLR5;
+				INFOPLIST_FILE = "NYLT Today Message/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.aacnylt.NYLT-UI-Manager.NYLT-Today-Message";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -460,6 +631,15 @@
 			buildConfigurations = (
 				C071593F21C2139C003A54C9 /* Debug */,
 				C071594021C2139C003A54C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C071595321C215C9003A54C9 /* Build configuration list for PBXNativeTarget "NYLT Today Message" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C071595421C215C9003A54C9 /* Debug */,
+				C071595521C215C9003A54C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -15,6 +15,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBOutlet weak var messageField: UITextField!
+    @IBAction func SetMessage(_ sender: Any) {
+        UserDefaults(suiteName: "group.org.aacnylt.ui")?.set(messageField.text, forKey: "nyltui")
+        Notify(message: "Message set.", title: "Success")
+    }
+    
+    // MARK: general utils
+    func Notify(message: String, title: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+        self.present(alert, animated: true)
+    }
+    
 }
 
